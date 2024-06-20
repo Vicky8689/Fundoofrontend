@@ -1,0 +1,123 @@
+body
+{
+    height: 100vh;
+    width: 100%;
+    margin: 0%;  
+    /* border: 2PX SOLID RED; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.a{
+    height: 85%;
+    width: 50%;
+    border: 2px solid rgb(134, 134, 134);
+    border-radius: 10px;
+    display: flex;
+    padding: 30px;
+   
+    /* justify-content: center;  */
+    /* align-items:center ; */
+}
+
+.left-div{
+    /* border:2PX solid rgb(255, 4, 4); */
+    width: 60%;
+   
+    
+    /* justify-content: center;  */
+    /* text-align:justify; */
+    /* float :left; */
+}
+.right-div{
+    width: 40%;
+    /* border:2PX solid rgb(255, 0, 0); */
+    flex-wrap: wrap;
+    display: flex;
+
+    justify-content: center;
+     align-items: center; 
+    /* text-align:justify; */
+    /* float: right; */
+}
+
+.name{
+    height: 40px;
+ /* border:2PX solid rgb(255, 0, 0); */
+ display: flex;
+ justify-content: space-between;
+ /* justify-content: flex-start; */
+}
+.name div{
+     /* border:2PX solid rgb(0, 255, 200); */
+     display: flex;
+}
+.left-div input{
+    height: 85%;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    /* border:2PX solid rgb(0, 255, 200); */
+}
+.logo img{
+    
+    width: 145px;
+    
+     /* border:2PX solid rgb(0, 255, 200); */
+
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     /* border:2PX solid rgb(255, 60, 0); */
+
+}
+.username input{
+    width: 96%;
+    height: 33px;
+    padding: 5px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+     /* border:2PX solid rgb(255, 60, 0); */
+
+}
+.textlink{
+    text-decoration: none;
+    color: 0260f8;
+    
+}
+.bottom{
+     /* border:2PX solid rgb(255, 60, 0); */
+     display: flex;
+     justify-content: space-between;
+     width: 90%;
+     height: 35px;
+
+}
+.bottom button{
+    color:white;
+    background-color:#0260f8;
+    border: none;
+    box-shadow: 100px 100px 100px  black;
+    
+    /* border:2PX solid rgb(46, 197, 16); */
+    border-radius: 8px;
+    width: 21%;
+
+    height: 100%;
+}
+.username label{
+    margin-bottom: 50px;
+    margin-left: 10px;
+    
+}
+.username a{
+    margin-left: 10px;
+}

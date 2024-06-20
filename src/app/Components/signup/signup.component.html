@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.component.css">
+</head>
+
+<body>
+    <div class="a">
+
+        <div class="left-div">
+
+            <form [formGroup]="signupform" (ngSubmit)="signupuser()">
+                
+                <div class="top" >
+                    <div class="logo">
+                        <img src="..\assets\logo.png" alt="">
+                    </div>
+                    <div>
+                       <h2>
+                        Create Your Google Account
+                       </h2> 
+                    </div>
+
+                </div>
+                
+
+                <br>
+                <div class="name">
+                    <div>
+                        <input type="text" placeholder="First Name" formControlName="firstName">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="last Name" formControlName="lastName">
+                    </div>
+                </div>
+                <br>
+                <div class="username">
+                    <input type="text" placeholder="User Name" formControlName="userName">
+                    <label>
+                          can use letters, numbers & periods
+                        <br>
+                        
+                    </label>
+                    <a class="textlink" href=""> Use my current email instead</a>
+                        
+                </div>
+                <br>
+                <div class="name">
+                    <div>
+                        <input type="password" placeholder="Password" formControlName="pass">
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Confirm" formControlName="confPass">
+                    </div>
+                   
+                </div>
+                <div>
+                    <p>
+                        Use 8 or more characters with a mix of letters, numbers & symbols
+                    </p>
+                    <input type="checkbox" >Show Password
+                </div>
+                <br>
+                <br><br>
+                <div class="bottom">
+                    <a class="textlink" href=""> Sign in insted</a>
+                    <button>Next</button>
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="right-div">
+            <div>
+                <img src="..\assets\signup.jpg" alt="">
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

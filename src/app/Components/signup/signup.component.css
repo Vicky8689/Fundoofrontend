@@ -2,11 +2,11 @@ body
 {
     height: 100vh;
     width: 100%;
-    margin: 0%;  
+    /* margin: 0%;   */
     /* border: 2PX SOLID RED; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     
 }
 
@@ -25,7 +25,9 @@ body
 .left-div{
     /* border:2PX solid rgb(255, 4, 4); */
     width: 60%;
-   
+   display: flex;
+  
+   /* flex-direction: row; */
     
     /* justify-content: center;  */
     /* text-align:justify; */
@@ -42,72 +44,250 @@ body
     /* text-align:justify; */
     /* float: right; */
 }
-
-.name{
-    height: 40px;
- /* border:2PX solid rgb(255, 0, 0); */
- display: flex;
- justify-content: space-between;
- /* justify-content: flex-start; */
-}
-.name div{
-     /* border:2PX solid rgb(0, 255, 200); */
-     display: flex;
-}
-.left-div input{
-    height: 85%;
-    border-radius: 5px;
-    padding: 5px;
-    padding-left: 10px;
-    border: 1px solid gray;
-    border-radius: 5px;
-
-    /* border:2PX solid rgb(0, 255, 200); */
-}
-.logo img{
-    
-    width: 145px;
-    
-     /* border:2PX solid rgb(0, 255, 200); */
-
-}
 .top{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+     /* border:2PX solid rgb(14, 173, 28); */
+
+}
+.middle{
+    height: 45vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-between ; */
+    /* align-items: center; */
+    /* border:2PX solid rgb(0, 38, 255); */
+    
+}
+.bottom{
+    height:10vh;
+    width: 100%;
+    /* border:2PX solid rgb(18, 206, 18); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-     /* border:2PX solid rgb(255, 60, 0); */
+   
+}
+
+.bottom button{
+    color:white;
+    background-color:#2b28e9;
+    border: none;
+    box-shadow: 100px 100px 100px  black;
+    
+    /* border:2PX solid rgb(46, 197, 16); */
+    border-radius: 8px;
+    width: 12vh;
+
+    height: 5vh;
+}
+.bt1{
+
+    display: flex;
+    justify-content: space-between;
+    /* border:2PX solid rgb(46, 197, 16); */
 
 }
-.username input{
+.top h2{
+    display: flex;
+    flex-wrap: wrap;
+ font-size: 140%;
+ text-decoration: none;
+}
+
+.name{
+    /* height: 40px; */
+    height:15vh;
+    /* width: 100%; */
+ /* border:2PX solid rgb(255, 0, 0); */
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ /* justify-content: flex-start; */
+}
+.name input{
+    height:7vh;
+    width: 100%;
+ /* border:2PX solid rgb(9, 31, 233); */
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.username{
+    height: 80vh;
+ /* border:2PX solid rgb(231, 99, 11); */
+
+}
+.un1{
+    /* width: 100%; */
+    height: 8vh;
+ /* border:2PX solid rgb(9, 31, 233); */
+
+}
+
+.ng-tns-c1205077789-2{
+    width: 100%;
+ /* border:2PX solid rgb(233, 9, 196); */
+
+}
+.un1 input{
+    height:7vh;
+    width: 100%;
+ /* border:2PX solid rgb(9, 31, 233); */
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.pass{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    /* border:2PX solid rgb(26, 201, 64); */
+   
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pass1{
+    /* height:15vh; */
+    /* width: 100%; */
+ /* border:2PX solid rgb(255, 0, 0); */
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.pass2{
+    width: 100%;
+    /* border:2PX solid rgb(255, 0, 0); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pass1 input{
+    height:7vh;
+
+    /* border:2PX solid rgb(255, 0, 0); */
+
+}
+.textlink{
+    text-decoration: none;
+    color: 0260f8;   
+}
+
+.logo img{
+    
+    width: 40%;
+    height: 90%;
+    
+     /* border:2PX solid rgb(0, 255, 200); */
+
+}
+@media screen and (max-width:640px) {
+    .right-div{
+        display: none;
+    }
+    .a{
+        border: none;
+        width: fit-content;
+    }
+    .middle{
+       
+    
+        display: flex;
+        /* flex-direction: column; */
+     /* border:2PX solid rgb(0, 255, 200); */
+        
+    }
+    .pass{
+        display: flex;
+       
+     /* border:2PX solid rgb(248, 6, 6); */
+
+    }
+    .bottom{
+        height:10vh;
+        width: 100%;
+        margin-top: 50px;
+        /* border:2PX solid rgb(18, 206, 18); */
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    
+  
+   
+} 
+
+
+/* .uname{
+    
+    width: 100%;
+    
+ border:2PX solid rgb(26, 201, 64);
+ display: flex;
+ align-items: center;
+
+} */
+/* .uname input{
+    height: 48px;
+ /* border:2PX solid rgb(60, 7, 204); */
+
+    /* margin-top: 20px; */
+/* } */ 
+
+
+
+
+
+/* .pass div{
+    display: flex;
+    justify-content: space-between;
+} */
+/* .pass2 {
+    
+    height:70px;
+    /* width: 100%; */
+    /* flex-direction: column; */
+    /* color: aqua; */
+    
+ /* }   */
+
+
+
+
+/* :host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  } */
+
+
+/* .username input{
     width: 96%;
     height: 33px;
     padding: 5px;
     padding-left: 10px;
     border: 1px solid gray;
     border-radius: 5px;
-     /* border:2PX solid rgb(255, 60, 0); */
+    display: flex;
+    margin-top: 30px;
+     border:2PX solid rgb(255, 60, 0);
 
-}
-.textlink{
-    text-decoration: none;
-    color: 0260f8;
-    
-}
-.bottom{
-     /* border:2PX solid rgb(255, 60, 0); */
-     display: flex;
-     justify-content: space-between;
-     width: 90%;
-     height: 35px;
+} */
+/*  */
 
-}
-.bottom button{
+/* .bottom button{
     color:white;
     background-color:#0260f8;
     border: none;
     box-shadow: 100px 100px 100px  black;
     
-    /* border:2PX solid rgb(46, 197, 16); */
+    border:2PX solid rgb(46, 197, 16);
     border-radius: 8px;
     width: 21%;
 
@@ -117,7 +297,43 @@ body
     margin-bottom: 50px;
     margin-left: 10px;
     
-}
-.username a{
+} */
+/* .username a{
     margin-left: 10px;
-}
+} */
+
+
+/* 
+@media screen and (max-width:600px) {
+    .right-div{
+        display: none;
+    }
+    .a{
+        border: none;
+        width: fit-content;
+    }
+    .name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .name input{
+        
+   
+       gap: 30px;
+       margin-top: 0px;
+        
+    }
+    .username input{
+     
+        height: 19px;
+       
+     
+    }  
+    .bottom{
+        width: 100%;
+        margin-top: 200px;
+
+    }
+} */

@@ -48,7 +48,7 @@ export class SignupComponent {
         (response:any) => {
           // Handle success response
           console.log('Registration successful:', response.data);
-          localStorage.setItem('token', response.id);
+          // localStorage.setItem('token', response.id);
           // this.openSnackBar("Registration successful");
         },
         (error) => {

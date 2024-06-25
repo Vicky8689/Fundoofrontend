@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpService } from '../http/http.service';
 import { HttpHeaders } from '@angular/common/http';
+import { Token } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
@@ -15,5 +16,6 @@ export class UserService {
     
     return this.httpService.postService('/Registration',data,false,{headers:this.headers});
   }
+ 
 
 }

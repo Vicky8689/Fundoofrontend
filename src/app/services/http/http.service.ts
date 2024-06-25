@@ -15,8 +15,10 @@ export class HttpService {// HttpService class was created
   }
   // create function
   postService(url:string,data:any,token:boolean=false,httpOtions:any={}){
+    
     return this.http.post(this.baseUrlUser+url,data,token && httpOtions)
   }
+
 
 //  private url ='https://localhost:5001/'
 }

@@ -1,0 +1,85 @@
+mat-card{
+    /* max-width: %; */
+    width: 100%;
+    /* border:1pX solid rgb(152, 245, 3); */
+    /* border:1pX solid rgb(231, 231, 231); */
+    border-radius: 8px;
+    min-width: 370px;
+
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    /* border:2pX solid rgb(255, 0, 0); */
+
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    /* border:2pX solid rgb(255, 0, 0); */
+
+}
+.left{
+    /* border:2pX solid rgb(95, 241, 11); */
+    display: flex;
+    width: 100%;
+
+}
+.left textarea {
+    /* border:2pX solid rgb(95, 241, 11); */
+    /* border:none; */
+   
+    display: flex;
+    box-sizing: content-box;
+   
+
+
+}
+.left textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+
+
+  .middle textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    /* position: relative; */
+    overflow: hidden;
+  }
+  .bottom{
+    display: flex;
+    /* justify-content: space-between; */
+   justify-content: center;
+    /* border:2pX solid rgb(95, 241, 11); */
+
+
+  }
+    
+.custom-hover-button {
+    margin-top: 10px;
+    transition: background-color 0.3s ease; 
+}
+
+.custom-hover-button:hover {
+    background-color:rgb(243, 243, 243);
+}
+.bottom-left{
+    width: 100%;
+    /* border:2pX solid rgb(95, 241, 11); */
+    /* display: flex; */
+    /* justify-content: space-between; */
+   /* justify-content: center; */
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { LoginServiceService } from 'src/app/services/loginServices/login-service.service';
 import { UserService } from 'src/app/services/user/user.service';
 
@@ -15,9 +16,12 @@ export class LoginComponent {
     password:new FormControl('')
 
   })
+  onLoginClick(){
+    console.log('Button clicked');
+  }
   data:any;
   constructor(
-    private _formBuilder: FormBuilder,private loginService:LoginServiceService
+    private _formBuilder: FormBuilder,private loginService:LoginServiceService ,private route:Router
     ) {
      
      }
@@ -32,6 +36,7 @@ loginuser(){
     response=>{
       console.log('Login successful',response);
       localStorage.setItem('token', response.message);
+      this.route.navigateByUrl('/dashboard');
      },
     error=>{
       console.error('Login failed', error);

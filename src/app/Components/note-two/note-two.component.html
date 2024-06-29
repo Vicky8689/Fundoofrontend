@@ -1,0 +1,41 @@
+
+<form [formGroup]="noteAddForm" (ngSubmit)="closeNote()">
+
+<mat-card appearance="outlined">
+    <mat-card-content>
+        <div class="main">  <!-- maincad -->
+           <div class="top"><!-- top -->
+            <div class="left">                   
+                <textarea formControlName="noteTitle" cdkTextareaAutosize placeholder="Title"></textarea>                 
+            </div>
+            <div class="right">
+                <span class="material-symbols-outlined">keep</span>
+            </div>
+
+           </div>
+           <div class="middle">  <!--   middle -->
+            <textarea formControlName="noteDesc"  placeholder="Take a note"></textarea> 
+           </div>
+           <div class="bottom"> <!-- bottom -->
+            <div class="bottom-left">
+
+                <p><app-note-two-bottom></app-note-two-bottom></p>
+            </div>
+            <div class="bottom-right">           
+                    <div class="example-button-row">
+                      <button mat-button class="custom-hover-button" >Close</button>
+                    </div>
+                 
+            
+            </div>
+           </div>
+        </div>
+      
+
+
+
+    </mat-card-content>
+  </mat-card>
+
+</form>
+  

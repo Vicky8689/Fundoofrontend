@@ -35,7 +35,7 @@
                             <input type="text" placeholder="Email or phone*" formControlName="userName">
                             <br>
                             
-                            <input type="text" placeholder="Password*" formControlName="password">
+                            <input type="password" placeholder="Password*" formControlName="password">
             
                         </div>
                         <br>
@@ -46,7 +46,7 @@
                         <div class="bottom">
                             <a href="">Create account</a>
                             
-                            <button >Login</button>
+                            <button (click)="onLoginClick()">Login</button>
                         </div>
             
                     </form>

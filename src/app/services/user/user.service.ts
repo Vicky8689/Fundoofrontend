@@ -13,8 +13,9 @@ export class UserService {
   });
   constructor(private httpService:HttpService) { }
   registration(data:any){
-    
+
     return this.httpService.postService('/Registration',data,false,{headers:this.headers});
+    
   }
  
 

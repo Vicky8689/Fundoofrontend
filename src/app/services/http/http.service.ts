@@ -4,10 +4,13 @@ import {HttpClient, HttpHeaders} from  '@angular/common/http';
   providedIn: 'root'
 })
 export class HttpService {// HttpService class was created
-  private baseUrlUser ='https://localhost:5001/fundoonotes'
+  private baseUrlUser ='https://localhost:5001/fundoonotes';
+  private baseUrlNote ='https://localhost:5001/api/Notes';
+
   // private headers = new HttpHeaders({
   //   Accept: 'application/json',
-  //   Authorization: localStorage.getItem('token') || '',
+  //   Authorization: "Bearer "+localStorage.getItem('token') || '',
+    
   // });
  // inject the http client
   constructor(private http:HttpClient) { 
@@ -17,6 +20,15 @@ export class HttpService {// HttpService class was created
   postService(url:string,data:any,token:boolean=false,httpOtions:any={}){
     
     return this.http.post(this.baseUrlUser+url,data,token && httpOtions)
+  }
+  postServiceNote(url:string,data:any,token:boolean=false,httpOtions:any={}){
+    // console.log(this.http.post(this.baseUrlNote+url,data,true && httpOtions))
+
+    return this.http.post(this.baseUrlNote+url,data,true && httpOtions);
+  }
+  getServiceNote(url:string,token:boolean=false,httpOtions:any={}){
+
+    return this.http.get(this.baseUrlNote+url,token && httpOtions);
   }
 
 

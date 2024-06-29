@@ -1,0 +1,32 @@
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    /* border:2pX solid rgb(224, 0, 0); */
+
+}
+.left{
+    display: flex;
+    width: 70%;
+    /* border:2pX solid rgb(224, 0, 0); */
+
+    justify-content: space-around;
+}
+
+.example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+.custom-hover-button {
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.custom-hover-button:hover {
+    background-color:rgb(243, 243, 243); /* Desired hover color */
+}
+
+  
+  

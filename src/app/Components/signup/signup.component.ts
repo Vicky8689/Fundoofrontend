@@ -31,7 +31,7 @@ export class SignupComponent {
           firstName: ['',[Validators.required, Validators.pattern(/^[A-Z]{1}[a-z]{2,}$/)]],
           lastName: ['',[Validators.required, Validators.pattern(/^[A-Z]{1}[a-z]{2,}$/)]],
           userName: ['',[Validators.required,Validators.email]],
-          pass: ['',[Validators.required ]],
+          pass: ['',[Validators.required]],
           confPass: ['',[Validators.required]], 
                   
         }

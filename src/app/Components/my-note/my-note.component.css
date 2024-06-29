@@ -1,0 +1,74 @@
+mat-card{
+   
+    /* max-width: %; */
+    /* width: 100%; */
+    /* width: 20%;
+    height: 20%; */
+    /* border:1pX solid rgb(152, 245, 3); */
+    /* border:2pX solid rgb(0, 255, 55); */
+    /* border-radius: 8px; */
+    /* min-width: 370px; */
+    /* display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 20%;
+    height: 20%;
+    border:2pX solid rgb(255, 0, 0); */
+
+
+}
+.base{
+    display: flex;
+    /* min-width: 22%; */
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    gap: 20px;
+    border:2pX solid rgb(255, 8, 0);
+
+}
+/* .main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 20%;
+    height: 20%;
+    border:2pX solid rgb(255, 0, 0);
+
+} */
+.top{
+    display: flex;
+    justify-content: space-between;
+    /* border:2pX solid rgb(255, 0, 0); */
+
+}
+.left{
+    /* border:2pX solid rgb(11, 46, 241);
+    display: flex;
+    width: 100%; */
+
+}
+.bottom{
+    display: flex; 
+    justify-content: space-between;
+   /* justify-content: center;
+    border:2pX solid rgb(95, 241, 11); */
+
+
+  }
+  .mat-mdc-card-outlined {
+    height: fit-content;
+
+    /* width: 22%; */
+    max-width: 22%;
+   
+
+    /* border:2pX solid rgb(95, 241, 11);  */
+
+  }
+
+.middle h1{
+    
+   
+
+
+}

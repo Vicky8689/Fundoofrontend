@@ -25,13 +25,16 @@
         <div><span class="material-symbols-outlined">
                 more_vert
             </span></div>
-        <div><span class="material-symbols-outlined">
+        <div *ngIf="!hideIcon" >
+
+            <div><span class="material-symbols-outlined">
                 undo
             </span></div>
-        <div><span class="material-symbols-outlined">
+            <div><span class="material-symbols-outlined">
                 redo
             </span></div>
-
+            
+        </div>
     </div>
     
 

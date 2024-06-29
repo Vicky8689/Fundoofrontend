@@ -4,15 +4,15 @@ import { HttpService } from 'src/app/services/http/http.service';
 import { NoteService } from 'src/app/services/note/note.service';
 
 @Component({
-  selector: 'app-my-note',
-  templateUrl: './my-note.component.html',
-  styleUrls: ['./my-note.component.css']
+  selector: 'app-display-note',
+  templateUrl: './display-note.component.html',
+  styleUrls: ['./display-note.component.css']
 })
-export class MyNoteComponent  {
-  private headers = new HttpHeaders({
-    Accept: 'application/json',
-    Authorization: "Bearer " + localStorage.getItem('token') || '',
-  });
+export class DisplayNoteComponent  {
+  // private headers = new HttpHeaders({
+  //   Accept: 'application/json',
+  //   Authorization: "Bearer " + localStorage.getItem('token') || '',
+  // });
   constructor(private noteService:NoteService) {
     
   }
@@ -33,7 +33,6 @@ export class MyNoteComponent  {
 
 
   }
-  user=["fdd",'dhdd','dthfgff'];
 
 
 

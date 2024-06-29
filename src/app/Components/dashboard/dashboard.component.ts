@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
-import { MyNoteComponent } from '../my-note/my-note.component';
+import { DisplayNoteComponent } from '../displayNote/display-note.component';
 
 @Component({
   selector: 'app-dashboard',

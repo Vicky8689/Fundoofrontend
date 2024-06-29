@@ -3,7 +3,7 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
 import { NoteService } from 'src/app/services/note/note.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { from } from 'rxjs';
-import { MyNoteComponent } from '../my-note/my-note.component';
+import { DisplayNoteComponent } from '../displayNote/display-note.component';
 
 @Component({
   selector: 'app-note-two',

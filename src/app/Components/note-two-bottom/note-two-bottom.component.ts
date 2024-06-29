@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { NoteService } from 'src/app/services/note/note.service';
 
@@ -9,5 +9,12 @@ import { NoteService } from 'src/app/services/note/note.service';
 })
 export class NoteTwoBottomComponent {
 
- 
+ @Input() hideIcon:any;
+ constructor(){
+
+ }
+ ngOnInit(){
+console.log(this.hideIcon);
+ }
+
 }

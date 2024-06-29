@@ -29,7 +29,7 @@ import { NoteTwoComponent } from './Components/note-two/note-two.component';
 import {MatCardModule} from '@angular/material/card';
 import { NoteTwoBottomComponent } from './Components/note-two-bottom/note-two-bottom.component';
 import {MatDividerModule} from '@angular/material/divider';
-import { MyNoteComponent } from './Components/my-note/my-note.component';
+import { DisplayNoteComponent } from './Components/displayNote/display-note.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +41,7 @@ import { MyNoteComponent } from './Components/my-note/my-note.component';
     NoteOneComponent,
     NoteTwoComponent,
     NoteTwoBottomComponent,
-    MyNoteComponent,
+    DisplayNoteComponent,
   ],
   imports: [
     

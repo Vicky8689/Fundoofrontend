@@ -9,12 +9,26 @@ import { DisplayNoteComponent } from '../displayNote/display-note.component';
 })
 export class DashboardComponent {
   show=true
+ 
+  showNotecondition="note";
+ 
 
+  goArchive(){
+    this.showNotecondition="archive";
+  }
+  goNote(){
+    this.showNotecondition="note";
+  }
+  goTrash(){
+    this.showNotecondition="trash";
+  }
+  
   myNoteFundashboard(){
     console.log("hello i am function in dash board");
     this.show=!this.show;
-    
-    
+    this.showNotecondition="note";
+
+ 
   }
 
 }

@@ -30,6 +30,7 @@ import {MatCardModule} from '@angular/material/card';
 import { NoteTwoBottomComponent } from './Components/note-two-bottom/note-two-bottom.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { DisplayNoteComponent } from './Components/displayNote/display-note.component';
+import { DisplayArchiveComponent } from './Components/display-archive/display-archive.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { DisplayNoteComponent } from './Components/displayNote/display-note.comp
     NoteTwoComponent,
     NoteTwoBottomComponent,
     DisplayNoteComponent,
+    DisplayArchiveComponent,
   ],
   imports: [
     

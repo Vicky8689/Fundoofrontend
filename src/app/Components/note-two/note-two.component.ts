@@ -31,8 +31,8 @@ export class NoteTwoComponent {
     this.noteAddForm=this._formBuilder.group(
       {
         noteTitle: ['',[Validators.required]],
-        noteDesc: ['',[Validators.required]],        
-        noteColor: ['red']      
+        noteDesc: ['',[Validators.required]],       
+        noteColor: ['']      
       }
      
     );

@@ -1,53 +1,29 @@
 <div class="base">
+        <div *ngFor="let item of allData ">  
+            <mat-card appearance="outlined"  *ngIf="check(item)">
+                <mat-card-content>
+                    <div class="main"> <!-- maincad -->
+                        <div class="top"><!-- top -->
+                            <div class="left">
+                                <h4 style="font-weight:500;">{{item.title}}</h4>
+                           
+                            </div>
+                            <div class="right">
+                                <span class="material-symbols-outlined">keep</span>
+                            </div>
 
-    <mat-card appearance="outlined" *ngFor="let item of allData ">
-        <mat-card-content>
-            <div class="main"> <!-- maincad -->
-                <div class="top"><!-- top -->
-                    <div class="left">
-                        <!-- <textarea formControlName="noteTitle" cdkTextareaAutosize placeholder="Title"></textarea>                  -->
-                        <h3>{{item.title}}</h3>
+                        </div>
+                        <div class="middle"> <!--   middle -->
+                            <label >{{item.description}}</label>
+                        </div>
+                        <div class="bottom"> <!-- bottom -->
+
+                            <app-note-two-bottom [hideIcon]="true" [changelogoarchive]="archivTrashLogo" [_iconStatus] ="iconStatus"></app-note-two-bottom>
+                        </div>
                     </div>
-                    <div class="right">
-                        <span class="material-symbols-outlined">keep</span>
-                    </div>
-
-                </div>
-                <div class="middle"> <!--   middle -->
-                    <!-- <textarea formControlName="noteDesc"  placeholder="Take a note"></textarea>  -->
-                    <h1>{{item.description}}</h1>
-                </div>
-                <div class="bottom"> <!-- bottom -->
-                    <!-- <div>
-                        <span class="material-symbols-outlined">
-                            add_alert
-                        </span>
-                    </div>
-                    <div><span class="material-symbols-outlined">
-                            person_add
-                        </span></div>
-                    <div><span class="material-symbols-outlined">
-                            palette
-                        </span>
-                    </div>
-                    <div>
-                        <span class="material-symbols-outlined">
-                            image
-                        </span>
-                    </div>
-                    <div><span class="material-symbols-outlined">
-                            archive
-                        </span></div>
-                    <div><span class="material-symbols-outlined">
-                            more_vert
-                        </span></div> -->
-                        <app-note-two-bottom [hideIcon]="true"></app-note-two-bottom>
-                </div>
-            </div>
-
-
-
-
-        </mat-card-content>
-    </mat-card>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    
 </div>
+        

@@ -9,10 +9,10 @@ mat-card{
 }
 .main{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-direction: column;
     gap: 10px;
-    /* border:2pX solid rgb(255, 0, 0); */
+    /* border:2pX solid rgb(0, 17, 255) !important; */
 
 }
 .top{

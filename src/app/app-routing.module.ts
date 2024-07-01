@@ -5,6 +5,7 @@ import { LoginComponent } from './Components/login/login.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { DisplayNoteComponent } from './Components/displayNote/display-note.component';
 import { AuthGuard } from './Components/guards/auth.guard';
+import { DisplayArchiveComponent } from './Components/display-archive/display-archive.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -17,7 +18,11 @@ const routes: Routes = [
             },
           {
              path: 'notes',component:DisplayNoteComponent
+          },
+          {
+            path:'archive',component:DisplayArchiveComponent
           }
+
         ]
    }
 

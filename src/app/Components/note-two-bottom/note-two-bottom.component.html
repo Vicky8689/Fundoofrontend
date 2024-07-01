@@ -1,43 +1,87 @@
 <div class="bottom">
-    <div class="left">
+    <div class="left" *ngIf=_iconStatus>
+        <div  >
+            <button class="iconHover">
+                
+                <span class="material-symbols-outlined " >
+                    add_alert
+                </span>
+            </button>
+        </div>
         <div>
+            <button class="iconHover">
 
-            <span class="material-symbols-outlined">
-                add_alert
-            </span>
-        </div>
-        <div><span class="material-symbols-outlined">
-                person_add
-            </span></div>
-        <div>
-            <span class="material-symbols-outlined">
-                palette
-            </span>
+                <span class="material-symbols-outlined">
+                    person_add
+                </span>
+            </button>
         </div>
         <div>
-            <span class="material-symbols-outlined">
-                image
-            </span>
-        </div>
-        <div><span class="material-symbols-outlined">
-                archive
-            </span></div>
-        <div><span class="material-symbols-outlined">
-                more_vert
-            </span></div>
-        <div *ngIf="!hideIcon" >
+            <button class="iconHover">
 
-            <div><span class="material-symbols-outlined">
-                undo
-            </span></div>
-            <div><span class="material-symbols-outlined">
-                redo
-            </span></div>
+                <span class="material-symbols-outlined">
+                    palette
+                </span>
+            </button>
+        </div>
+        <div>
+            <button class="iconHover">
+
+                <span class="material-symbols-outlined">
+                    image
+                </span>
+            </button>
+        </div>
+
+        <div>
+            <button class="iconHover">
+
+                <span class="material-symbols-outlined">
+                    {{changelogoarchive}}
+                </span>
+            </button>
+        </div>
+        <div>
+            <button class="iconHover">
+            <span class="material-symbols-outlined">more_vert
+            </span>
+            </button>
+        </div>
+        <!-- <div class="myundo" *ngIf="!hideIcon" > -->
+
+            <div *ngIf="!hideIcon">
+                <button class="iconHover">
+
+                    <span class="material-symbols-outlined">
+                        undo
+                    </span>
+                </button>
+            </div>
+            <div *ngIf="!hideIcon">
+                <button class="iconHover">
+
+                    <span class="material-symbols-outlined">
+                        redo
+                    </span>
+                </button>
+            </div>
             
+        <!-- </div> -->
+    </div>
+    <div class="mytrash" *ngIf="!_iconStatus">
+        <div>
+            <button class="iconHover">
+
+                <span class="material-symbols-outlined">
+                    delete_forever
+                </span>
+            </button>
+        </div>
+        <div>
+            <button class="iconHover">
+
+                <span class="material-symbols-outlined">restore_from_trash</span>
+            </button>
         </div>
     </div>
-    
-
-
-
 </div>

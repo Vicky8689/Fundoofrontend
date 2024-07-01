@@ -5,8 +5,8 @@
     <mat-card-content>
         <div class="main">  <!-- maincad -->
            <div class="top"><!-- top -->
-            <div class="left">                   
-                <textarea formControlName="noteTitle" cdkTextareaAutosize placeholder="Title"></textarea>                 
+            <div class="left">   
+                <textarea formControlName="noteTitle" cdkTextareaAutosize placeholder="Title" required></textarea>                  
             </div>
             <div class="right">
                 <span class="material-symbols-outlined">keep</span>
@@ -19,7 +19,7 @@
            <div class="bottom"> <!-- bottom -->
             <div class="bottom-left">
 
-                <p><app-note-two-bottom [hideIcon]=false></app-note-two-bottom></p>
+                <p><app-note-two-bottom [hideIcon]=false [_iconStatus] =true></app-note-two-bottom></p>
             </div>
             <div class="bottom-right">           
                     <div class="example-button-row" >

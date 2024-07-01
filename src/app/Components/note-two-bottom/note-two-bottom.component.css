@@ -5,12 +5,24 @@
     /* border:2pX solid rgb(224, 0, 0); */
 
 }
+.iconHover{
+    border: none;
+    background-color: transparent;
+}
+.iconHover:hover{
+    background-color: rgb(223, 221, 221) !important;
+    border-radius: 50% !important;
+    
+}
 .left{
     display: flex;
-    width: 70%;
+   min-width:220px;
+   width: 98%;
+    max-width: 320px;
+    
     /* border:2pX solid rgb(224, 0, 0); */
-
-    justify-content: space-around;
+    gap: 4px;
+    justify-content: space-between;
 }
 
 .example-label {
@@ -28,5 +40,14 @@
     background-color:rgb(243, 243, 243); /* Desired hover color */
 }
 
+.myundo{
+    display: flex;
+    border:2pX solid rgb(224, 0, 0);
+ gap: 5px;
+    /* justify-content: space-between; */
+}
   
-  
+ .mytrash{
+    display: flex;
+    gap:20px ;
+ } 

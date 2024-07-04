@@ -1,7 +1,8 @@
 <div class="bottom">
+
     <div class="left" *ngIf=_iconStatus>
         <div  >
-            <button class="iconHover">
+            <button class="iconHover" >
                 
                 <span class="material-symbols-outlined " >
                     add_alert
@@ -16,14 +17,26 @@
                 </span>
             </button>
         </div>
-        <div>
-            <button class="iconHover">
+        <div >
+            <div *ngIf="edit">
 
-                <span class="material-symbols-outlined">
-                    palette
-                </span>
-            </button>
+                <button class="iconHover">
+       <input  style="width: 35px;" type="color" id="favcolor" (click)="updatecolor()" name="favcolor" [(ngModel)]=colorcode >
+     </button>
+             </div>
+             <div>
+                <button class="iconHover" (click)="colorPop()">
+                    <span  class="material-symbols-outlined"> 
+                        palette
+                    </span>
+                </button>
+            </div>
         </div>
+       
+            
+           
+        
+        
         <div>
             <button class="iconHover">
 
@@ -36,18 +49,28 @@
         <div>
             <button class="iconHover">
 
-                <span class="material-symbols-outlined">
-                    {{changelogoarchive}}
+                <span class="material-symbols-outlined" *ngIf="changelogoarchive else elseBlock" (click)="archiveNoteNTBC()">
+                    archive
                 </span>
+                <ng-template #elseBlock>
+
+                    <span class="material-symbols-outlined"  (click)="unArchiveNoteNTBC()">
+                        unarchive
+                    </span>
+                </ng-template>
             </button>
         </div>
         <div>
-            <button class="iconHover">
-            <span class="material-symbols-outlined">more_vert
-            </span>
-            </button>
-        </div>
-        <!-- <div class="myundo" *ngIf="!hideIcon" > -->
+        <button class="iconHover">
+            <span class="material-symbols-outlined" (click)="trashNoteNTBC()" >
+                delete
+                </span>
+        </button>  
+
+    </div>
+   
+       
+       
 
             <div *ngIf="!hideIcon">
                 <button class="iconHover">
@@ -72,7 +95,7 @@
         <div>
             <button class="iconHover">
 
-                <span class="material-symbols-outlined">
+                <span class="material-symbols-outlined" (click)="deleteNoteNTBC()">
                     delete_forever
                 </span>
             </button>
@@ -80,7 +103,7 @@
         <div>
             <button class="iconHover">
 
-                <span class="material-symbols-outlined">restore_from_trash</span>
+                <span class="material-symbols-outlined" (click)="  unTrashNoteNTBC()">restore_from_trash</span>
             </button>
         </div>
     </div>

@@ -46,15 +46,14 @@ export class SignupComponent {
       let data = {firstName:firstName,lastName:lastName,email:userName,password:pass}
       this.userService.registration(data).subscribe(
         (response:any) => {
-          // Handle success response
+         
           console.log('Registration successful:', response.data);
-          // localStorage.setItem('token', response.id);
-          // this.openSnackBar("Registration successful");
+         
         },
         (error) => {
-          // Handle error response
+          
           console.error('Registration failed:', error);
-          // this.openSnackBar("Registration Failed");
+        
         }
       );
     

@@ -23,6 +23,7 @@ mat-card{
 }
 .base{
     display: flex;
+    /* flex-direction: column; */
     /* min-width: 22%; */
     word-wrap: break-word;
     flex-wrap: wrap;
@@ -40,28 +41,19 @@ mat-card{
     /* border:2pX solid rgb(255, 0, 0); */
 
 }
-.left{
-    /* border:2pX solid rgb(11, 46, 241);
-    display: flex;
-    width: 100%; */
 
-}
 .bottom{
     display: flex; 
     justify-content: space-between;
     margin-top:20px ;
-   /* justify-content: center;
-    border:2pX solid rgb(95, 241, 11); */
-
-
   }
   .mat-mdc-card-outlined {
     height: fit-content;
 
-    width: 250px;
+    /* width: 250px; */
     min-width: 250px;
    
-
+ /* background-color: rgb(226, 52, 52); */
     border:1pX solid rgb(205, 206, 205); 
 
   }

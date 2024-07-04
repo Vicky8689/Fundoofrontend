@@ -4,16 +4,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 113%;
     height: 40px;
     border-radius: 8px;
-min-width: 330px;
-padding-inline: 10px;
+/* min-width: 330px; */
+
+/* padding-inline: 10px; */
 padding :0 20px
     
 }
 
-textarea{
+input{
     width: 100% !important;
     /* border:2pX solid rgb(223, 0, 0) !important; */
    
@@ -25,17 +26,14 @@ textarea{
  
 
 }
-.noteinput{
-    /* margin: 5px; */
-    /* border:none;
-    width: 100%; */
-}
+/* .ng-star-inserted {
+
+    margin: 0px !important;
+} */
 .noteone-logo{
     display: flex;
     justify-content: space-around;
-    gap: 20px;
-    
+    gap: 20px; 
     
     /* border:2PX solid rgb(240, 8, 8); */
-
 }

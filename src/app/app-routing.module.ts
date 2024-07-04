@@ -6,6 +6,8 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { DisplayNoteComponent } from './Components/displayNote/display-note.component';
 import { AuthGuard } from './Components/guards/auth.guard';
 import { DisplayArchiveComponent } from './Components/display-archive/display-archive.component';
+import { NoteComponent } from './Components/note/note.component';
+import { DisplayTrashComponent } from './Components/display-trash/display-trash.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -17,10 +19,13 @@ const routes: Routes = [
                 path: '', redirectTo: '/dashboard/notes', pathMatch:'full'
             },
           {
-             path: 'notes',component:DisplayNoteComponent
+             path: 'notes',component:NoteComponent
           },
           {
             path:'archive',component:DisplayArchiveComponent
+          },
+          {
+            path:'trash',component:DisplayTrashComponent
           }
 
         ]

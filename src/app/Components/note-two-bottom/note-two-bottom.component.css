@@ -42,7 +42,7 @@
 
 .myundo{
     display: flex;
-    border:2pX solid rgb(224, 0, 0);
+    /* border:2pX solid rgb(224, 0, 0); */
  gap: 5px;
     /* justify-content: space-between; */
 }

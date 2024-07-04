@@ -50,6 +50,10 @@ export class NoteTwoComponent {
         
         (response:any)=>{
           console.log('note added succes:',response)
+         
+
+
+
         },
         (error)=>{
           console.error('note note add ', error);

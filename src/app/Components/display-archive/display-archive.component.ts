@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-display-archive',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./display-archive.component.css']
 })
 export class DisplayArchiveComponent {
+  // @Input() condition:string='';
+  // @Input() myGridViewValue:boolean=true;
+  showNotecondition='archive';
+  // myGridViewValue1=this.myGridViewValue;
 
 }

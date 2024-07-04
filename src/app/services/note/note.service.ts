@@ -28,4 +28,28 @@ export class NoteService {
     
    }
 
+   archiveNote(data:any){
+    return  this.httpService.postServiceNote('/ArchiveNote?noteId='+data,{},true,{headers:this.headers});
+   }
+   unArchiveNote(data:any){
+     return  this.httpService.postServiceNote('/UnArchiveNote?noteId='+data,{},true,{headers:this.headers});
+   }
+
+   trashNote(data:any){
+    return  this.httpService.postServiceNote('/trashNote?noteId='+data,{},true,{headers:this.headers});
+   }
+   unTrashNote(data:any){
+    return  this.httpService.postServiceNote('/unTrashNote?noteId='+data,{},true,{headers:this.headers});
+   }
+
+   deleteNote(data:any){
+    
+     return this.httpService.deleteServiceNote('/DeleteNote?noteId='+data,true,{headers:this.headers});
+   }
+   updateNoteColor(noteid:any,color:any){
+   console.log(color+"inupdate")
+   console.log('/UpdateColorNote?noteId='+noteid+'&color='+color)
+     return this.httpService.putServiceNote('/UpdateColorNote?noteId='+noteid+'&color='+ encodeURIComponent(color),true,{headers:this.headers});
+   }
+
 }

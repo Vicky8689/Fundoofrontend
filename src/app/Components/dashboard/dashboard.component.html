@@ -2,26 +2,35 @@
 
 
   <mat-toolbar class="mat-elevation-z3">
-    <button mat-icon-button (click)="drawer.toggle() ;goNote();">
+    <button mat-icon-button (click)="drawer.toggle() ;">
       <mat-icon>menu</mat-icon>
     </button>
     <img src="..\assets\keeplogo.png" alt="">
     <h1>Fundoo</h1>
 
     <!-- <span class="example-spacer"> -->
-    <div class="search">
-      <mat-icon>search</mat-icon>
-      <input type="text" placeholder="Search">
+      
+<div style="width: 25%;"></div>
+        <div class="search">
+          
 
-    </div>
+            <mat-icon>search</mat-icon>
+            <input type="text" placeholder="Search">
+          
+          
+        </div>
+<div style="width: 15%;"></div>
+     
     <!-- </span> -->
-    <div>
+    <div class="navIconprofile">
 
       <button mat-icon-button>
         <mat-icon>refresh</mat-icon>
-      </button><button mat-icon-button class="example-icon ">
+      </button>
+      <button mat-icon-button class="example-icon " (click)="myGridView()">
         <mat-icon>grid_view</mat-icon>
-      </button><button mat-icon-button class="example-icon ">
+      </button>
+      <button mat-icon-button class="example-icon ">
         <mat-icon>settings</mat-icon>
       </button>
       <button mat-icon-button class="example-icon ">
@@ -31,15 +40,30 @@
         <mat-icon>account_circle</mat-icon>
       </button>
     </div>
+    <div class="moreVert" *ngIf ='!logout'>
+      
+        <button mat-icon-button (click)="logoutShow()">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      
+    </div>
+  <div *ngIf ='logout'>
+        <button (click)="onLogOut()" >
+          Logout
+        </button>
+   
+  </div>
+      
+   
   </mat-toolbar>
 
   <div class="boton">
 
     <div>
       <!-- logo -->
-      <mat-drawer opened mode="side" class="logo">
+      <mat-drawer opened mode="side" class="logo" >
 
-        <div>
+        <div ng-mouseover="drawer.toggle()">
           <button  class="example-icon ">
 
             <span class="material-symbols-outlined" (click)="goNote();">
@@ -86,10 +110,6 @@
     <div class="drawecon">
       <mat-drawer-container class="example-container">
 
-        <!-- maindiv -->
-
-
-
         <mat-drawer #drawer mode="side" class="drawerdinamic">
           <div (click)="goNote();">
             <p>Notes</p>
@@ -103,24 +123,11 @@
           <div (click)="goArchive()">
             <p>Archive</p>
           </div>
-          <div>
+          <div (click)="goTrash()">
             <p>Trash</p>
           </div>
 
         </mat-drawer>
-
-
-
-
-
-        <!-- note component -->
-
-
-        <!-- <mat-drawer-content class="notecontent">
-          <p>Main content goes here</p>
-        </mat-drawer-content> -->
-
-
 
       </mat-drawer-container>
     </div>
@@ -128,7 +135,7 @@
       <div class="upper">
 
         <div class="uppernote" *ngIf="show else elseBlock">
-          <app-note-one></app-note-one>
+          <app-note-one ></app-note-one>
         </div>
 
 
@@ -142,7 +149,10 @@
       </div>
       <div class="lower">
         <div class="mycart">
-          <app-display-note [condition]=showNotecondition ></app-display-note>
+          <router-outlet >
+    
+          </router-outlet>
+          <!-- <app-display-note [condition]=showNotecondition [myGridViewValue]="myGridViewValue"></app-display-note> -->
           <!-- <app-display-archive></app-display-archive> -->
 
         </div>

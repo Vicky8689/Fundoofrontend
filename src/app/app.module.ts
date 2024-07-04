@@ -14,7 +14,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { UserService } from './services/user/user.service';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 
-
+import { FormsModule } from '@angular/forms';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import {MatMenuModule} from '@angular/material/menu';
@@ -31,6 +31,8 @@ import { NoteTwoBottomComponent } from './Components/note-two-bottom/note-two-bo
 import {MatDividerModule} from '@angular/material/divider';
 import { DisplayNoteComponent } from './Components/displayNote/display-note.component';
 import { DisplayArchiveComponent } from './Components/display-archive/display-archive.component';
+import { NoteComponent } from './Components/note/note.component';
+import { DisplayTrashComponent } from './Components/display-trash/display-trash.component';
 
 @NgModule({
   declarations: [
@@ -44,9 +46,11 @@ import { DisplayArchiveComponent } from './Components/display-archive/display-ar
     NoteTwoBottomComponent,
     DisplayNoteComponent,
     DisplayArchiveComponent,
+    NoteComponent,
+    DisplayTrashComponent,
   ],
   imports: [
-    
+    FormsModule,
     MatSelectModule,
     MatDividerModule,
     MatMenuModule,

@@ -11,6 +11,7 @@ export class NoteOneComponent {
   constructor(private dashboardComponent:DashboardComponent){
 
   }
+
   myNoteFun(){
     console.log("hello i am function");
     this.dashboardComponent.myNoteFundashboard();

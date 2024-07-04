@@ -30,6 +30,14 @@ export class HttpService {// HttpService class was created
 
     return this.http.get(this.baseUrlNote+url,token && httpOtions);
   }
+  deleteServiceNote(url:string,token:boolean=false,httpOtions:any={}){
+
+    return this.http.delete(this.baseUrlNote+url,token && httpOtions);
+  }
+  putServiceNote(url:string,token:boolean=true,httpOtions:any={}){
+
+    return this.http.put(this.baseUrlNote+url,{},token && httpOtions);
+  }
 
 
 //  private url ='https://localhost:5001/'

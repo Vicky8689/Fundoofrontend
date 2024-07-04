@@ -7,6 +7,7 @@ mat-card{
     min-width: 370px;
 
 }
+
 .main{
     display: flex;
     /* justify-content: space-between; */
@@ -27,7 +28,7 @@ mat-card{
     width: 100%;
 
 }
-.left textarea {
+.left input {
     /* border:2pX solid rgb(95, 241, 11); */
     /* border:none; */
    
@@ -37,7 +38,7 @@ mat-card{
 
 
 }
-.left textarea {
+.left input {
     width: 100%;
     box-sizing: border-box;
     padding: 8px;

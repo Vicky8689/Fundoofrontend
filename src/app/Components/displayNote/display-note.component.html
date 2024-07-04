@@ -1,10 +1,11 @@
-<div class="base">
+<div class="base" [style.flex-direction]="myGride" >
         <div *ngFor="let item of allData ">  
-            <mat-card appearance="outlined"  *ngIf="check(item)">
-                <mat-card-content>
+            <mat-card  appearance="outlined"  *ngIf="check(item)" class="mat-mdc-card-outlined" [style.width]="width" [style.background-color]="item.color">
+                <mat-card-content >
                     <div class="main"> <!-- maincad -->
                         <div class="top"><!-- top -->
                             <div class="left">
+                                <!-- <h4 style="font-weight:500;">{{item.title}}</h4> -->
                                 <h4 style="font-weight:500;">{{item.title}}</h4>
                            
                             </div>
@@ -18,7 +19,7 @@
                         </div>
                         <div class="bottom"> <!-- bottom -->
 
-                            <app-note-two-bottom [hideIcon]="true" [changelogoarchive]="archivTrashLogo" [_iconStatus] ="iconStatus"></app-note-two-bottom>
+                            <app-note-two-bottom [itemId]="item.noteId" [hideIcon]="true" [changelogoarchive]="archivUnarchivLogo" [_iconStatus] ="iconStatus"></app-note-two-bottom>
                         </div>
                     </div>
                 </mat-card-content>

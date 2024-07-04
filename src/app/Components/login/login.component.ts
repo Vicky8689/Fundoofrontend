@@ -19,6 +19,9 @@ export class LoginComponent {
   onLoginClick(){
     console.log('Button clicked');
   }
+  goToRegistration(){
+    this.route.navigateByUrl('/signup');
+  }
   data:any;
   constructor(
     private _formBuilder: FormBuilder,private loginService:LoginServiceService ,private route:Router

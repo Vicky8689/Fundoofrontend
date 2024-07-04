@@ -19,166 +19,118 @@
 
                 <div class="middle">
                     <div class="name">
-                        <mat-form-field appearance="outline" class="fname">
-                            <mat-label>First Name</mat-label>
-                            <input formControlName="firstName" matInput placeholder="First Name" required />
-                            <mat-error *ngIf="signupForm.get('firstName')?.hasError('required')">
-                                First name is required.
-                            </mat-error>
-
-                            <!-- <mat-icon matSuffix></mat-icon> -->
-                        </mat-form-field>
-                        <mat-form-field appearance="outline" class="fname">
-                            <mat-label>Last Name</mat-label>
-                            <input formControlName="lastName" matInput placeholder="Last Name" required />
-                            <mat-error *ngIf="signupForm.get('firstName')?.hasError('required')">
-                                Last name is required.
-                            </mat-error>
-
-                            <!-- <mat-icon matSuffix></mat-icon> -->
-                        </mat-form-field>
+                     
+                        <div >
+                            <mat-form-field  class="fname"  appearance="outline" >
+                                <!-- <mat-label>First Name</mat-label> -->
+                                <input style="margin-top:13px;"
+                                 formControlName="firstName" matInput placeholder="First Name" required />
+                                <mat-error *ngIf="signupForm.get('firstName')?.hasError('required')">
+                                    required.
+                                </mat-error>
+                                <mat-icon matSuffix></mat-icon>
+                            </mat-form-field>
+                        </div>
+                    
+                        <div>
+                            <mat-form-field  class="fname" appearance="outline" >
+                                <!-- <mat-label>Last Name</mat-label> -->
+                                <input  style="margin-top:13px;" formControlName="lastName" matInput placeholder="Last Name" required />
+                                <mat-error *ngIf="signupForm.get('lastName')?.hasError('required')">
+                                    required.
+                                </mat-error>
+                                <mat-icon matSuffix></mat-icon>
+                            </mat-form-field>
+                        </div>
+                        
                     </div>
-                    <br>
-
                     <div class="username">
-                        <div class="un1">
-                            <mat-form-field appearance="outline" class="fname">
-                                <mat-label>Email</mat-label>
-                                <input formControlName="userName" matInput placeholder="Email" required />
-                                <mat-error *ngIf="signupForm.get('firstName')?.hasError('required')">
-                                    First name is required.
+
+                        <div>
+                            <mat-form-field  class="uname" appearance="outline" >
+                                <!-- <mat-label>User Name</mat-label> -->
+                                <input style="margin-top:13px;"
+                                 formControlName="userName" matInput placeholder="userName" required />
+                                <mat-error *ngIf="signupForm.get('userName')?.hasError('required')">
+                                    required.
                                 </mat-error>
-    
                                 <mat-icon matSuffix></mat-icon>
                             </mat-form-field>
-                           
                         </div>
-                        <div >
-                            <div>
+                        <div class="usernamedata">
+                            <label>
+                                can use letters, numbers & periods
+                              <br><br>
 
-                                <label>
-                                    can use letters, numbers & periods
-                                </label>
-                            </div>
-                            <br>
-                            <div>
-
-                                <a class="textlink" href=""> Use my current email instead</a>
-                            </div> 
-                            <br>
-                        </div>
-                                
-                         
-
-
-                        <!-- <div class="un1" >
-                            <mat-form-field appearance="outline" >
-                                <mat-label>Email</mat-label>
-                                <input formControlName="lastName" matInput placeholder="Email" required />
-                                <mat-error *ngIf="signupForm.get('firstName')?.hasError('required')">
-                                    Last name is required.
-                                </mat-error>
-    
-                                <mat-icon matSuffix></mat-icon>
-    
-                            </mat-form-field>  
                               
-                                                   
+                          </label>
+                          <a class="textlink" href=""> Use my current email instead</a>
+                              <br><br>
                         </div>
-                        <div >
-                            You can use letters, numbers & periods                  
-                        </div>                       
-                        <div><a class="textlink" href=""> Use my current email instead</a>
-                        </div>
-
-
-
-                        <div>
-
-                        </div> -->
-
-                    </div>
-                    <div class="pass">
-                        <!-- <div class="name">
-                            <mat-form-field appearance="outline" class="fname">
-                                <mat-label>First Name</mat-label>
-                                <input formControlName="firstName" matInput placeholder="First Name" required />
-                                <mat-error *ngIf="signupForm.get('firstName')?.hasError('required')">
-                                    First name is required.
-                                </mat-error>
-    
-                                <mat-icon matSuffix></mat-icon>
-                            </mat-form-field>
-                            <mat-form-field appearance="outline" class="fname">
-                                <mat-label>Last Name</mat-label>
-                                <input formControlName="lastName" matInput placeholder="Last Name" required />
-                                <mat-error *ngIf="signupForm.get('firstName')?.hasError('required')">
-                                    Last name is required.
-                                </mat-error>
-    
-                                <mat-icon matSuffix></mat-icon>
-                            </mat-form-field>
-                        </div> -->
-                        <!-- <div>
-                            <p>
-                                Use 8 or more characters with a mix of letters, numbers & symbols
-                            </p>
-                        </div>
-                        <div>
-                            <input type="checkbox" >Show Password
-                        </div> -->
-                        <div class="pass1">
-                            <div class="pass2">
-                                <mat-form-field appearance="outline" class="fname">
-                                    <mat-label>Password</mat-label>
-                                    <input formControlName="pass" matInput placeholder="Password" required />
-                                    <mat-error *ngIf="signupForm.get('firstName')?.hasError('required')">
-                                        First name is required.
+                        <div class="pass">
+                            <div >
+                                <mat-form-field  class="fname"  appearance="outline" >
+                                    <!-- <mat-label>Password</mat-label> -->
+                                    <input style="margin-top:13px;" formControlName="pass" matInput placeholder="Password" required />
+                                    <mat-error *ngIf="signupForm.get('pass')?.hasError('required')">
+                                        required.
                                     </mat-error>
-        
                                     <mat-icon matSuffix></mat-icon>
                                 </mat-form-field>
-                                <mat-form-field appearance="outline" class="fname">
-                                    <mat-label>Confirm</mat-label>
-                                    <input formControlName="confPass" matInput placeholder="Confirm" required />
-                                    <mat-error *ngIf="signupForm.get('firstName')?.hasError('required')">
-                                        Last name is required.
-                                    </mat-error>
-        
-                                    <mat-icon matSuffix></mat-icon>
-                                </mat-form-field>
-                            </div>                          
-                            <div>
-                               <p>Use 8 or more characters with a mix of letters, numbers & symbols</p> 
-                                <p style="display: flex; align-items: center;">
-                                    <input type="checkbox" >Show Password
-                                </p>
                             </div>
+                        
                             <div>
-                               
+                                <mat-form-field  class="fname" appearance="outline" >
+                                    <!-- <mat-label>Confirm Password</mat-label> -->
+                                    <input style="margin-top:13px;" formControlName="confPass" matInput placeholder="Confirm Password" required />
+                                    <mat-error *ngIf="signupForm.get('confPass')?.hasError('required')">
+                                        required.
+                                    </mat-error>
+                                    <mat-icon matSuffix></mat-icon>
+                                </mat-form-field>
                             </div>
                         </div>
                         
-                        
-                        
-                        
                     </div>
+                    <div >
+                        <p style="margin-top: 0px;">
+                            Use 8 or more characters with a mix of letters, numbers & symbols
+                        </p>
+
+                        <input type="checkbox" >Show Password
+                    </div>
+                    <div class="bottom">
+
+                        <div>
+
+                            <a class="textlink" href=""> Sign in insted</a>
+                        </div>
+                        <div>
+
+                            <button (click)="signupuser()" >Next</button>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+
+
+
+
+               
                 </div>
                 <br><br><br><br>
 
-                <div class="bottom">
-                   
-                    <div class="bt1" >
-
-                        <a class="textlink" href=""> Sign in insted</a>
-                        <br><br><br>
-                        <button>Next</button>
-                    </div>
-                </div>
+              
 
 
 
 
+           
+           
             </form>
 
 

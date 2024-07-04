@@ -57,6 +57,7 @@
 .boton{
     height: 100vh;
      display: flex;
+     cursor: pointer;
     /* border:2PX solid rgb(228, 16, 192); */
 }
 .logo{

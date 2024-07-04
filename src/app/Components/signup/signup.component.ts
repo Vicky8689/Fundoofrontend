@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl,FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 // import { MustMatch } from './must-match.validator';
 import { UserService } from 'src/app/services/user/user.service';
 @Component({
@@ -23,7 +24,7 @@ export class SignupComponent {
   });
 
   constructor(
-    private _formBuilder: FormBuilder,private userService:UserService
+    private _formBuilder: FormBuilder,private userService:UserService, private router:Router
     ) { }
     ngOninit(){
       this.signupForm=this._formBuilder.group(
@@ -33,21 +34,28 @@ export class SignupComponent {
           userName: ['',[Validators.required,Validators.email]],
           pass: ['',[Validators.required]],
           confPass: ['',[Validators.required]], 
+
                   
-        }
+        },
+        
        
       );
       
     }
+
+    
+    
   signupuser(){
+   
     console.log(this.signupForm);
     const {firstName,lastName,userName,pass,confPass} = this.signupForm.value
-    if(this.signupForm.valid){
+    if(this.signupForm.valid && pass==confPass){
       let data = {firstName:firstName,lastName:lastName,email:userName,password:pass}
       this.userService.registration(data).subscribe(
         (response:any) => {
          
           console.log('Registration successful:', response.data);
+          this.router.navigate(['']);
          
         },
         (error) => {
@@ -56,12 +64,11 @@ export class SignupComponent {
         
         }
       );
-    
-    
-    
-  
 
+    }
+    else{
 
+      console.log('Form Not Valid');
     }
   }
   // constructor(){

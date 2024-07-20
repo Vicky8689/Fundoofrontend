@@ -15,7 +15,9 @@ export class DashboardComponent {
   logout=false;
   showNotecondition="note";
 
- constructor(private router: Router,private dataservice:DataServiceService){ }
+ constructor(private router: Router,private dataservice:DataServiceService){ 
+  
+ }
  myGridViewValue=true;
  logoutShow(){
   this.logout=true;

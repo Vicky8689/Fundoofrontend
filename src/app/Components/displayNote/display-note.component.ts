@@ -16,7 +16,7 @@ constructor(private noteService:NoteService, private router: Router,private data
 @Input() condition:any;
 myGridViewValue:boolean=true;
 allData:any[]=[];
-
+    
 myGride="row"
 width="300px"
 color='white'
